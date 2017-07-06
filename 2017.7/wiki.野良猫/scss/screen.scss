@@ -4,3 +4,117 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+
+/*----------------------
+        Clear fix
+----------------------*/
+.cf:before,
+.cf:after {
+    display: table;
+    content: "";
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+
+/*----------------------
+          Base
+----------------------*/
+body {
+	font-size: 17px;
+	font-family: sans-serif;
+}
+a {
+	color: #0645ad;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+/*----------------------
+          Module
+----------------------*/
+
+/*----------------------
+          Layout
+----------------------*/
+header {
+	float: right;
+	padding-top: 10px;
+	padding-right: 13px;
+	border: 1px solid #000;
+}
+
+/*----------------------
+          Body
+----------------------*/
+
+/*-- header --*/
+header {
+	font-size: 13.5px;
+	line-height: 15px;
+	li {
+		display: inline-block;
+		padding-right: 5px;
+	}
+	li:first-child{
+		color: #707070;
+		i {
+			padding-right: 4px;
+		}
+	}
+	li:last-child {
+		padding-right: 0;
+	}
+}
+
+/*-- main --*/
+#main-sidebar {
+	width: 150px;
+	padding-left: 20px;
+	padding-right: 10px;
+	font-size: 13.5px;
+	line-height: 15px;
+	border: 1px solid #000;
+	img {
+		margin-bottom: 20px;
+	}
+	div {
+		position: relative;
+		.contents-title {
+			margin-bottom: 6px;
+			background-image: url("../img/main_sidebar_boder.png");
+			background-position: bottom;
+			background-repeat: no-repeat;
+			// border: 1px dashed #000;
+			height: 24px;
+		}
+		ul {
+			margin-bottom: 20px;
+			li {
+				padding: 5px 0;
+			}
+		}
+		.contents-icon {
+		position: absolute;
+		right: 5px;
+		top: -10px;
+		color: #808080;
+		font-size: 17px;
+		}
+		.contents-icon:hover {
+			color: #555;
+		}
+		.link-add {
+			float: right;
+			color: #808080;
+		}
+		.link-add:hover {
+			color: #0645ad;
+		}
+	}
+}

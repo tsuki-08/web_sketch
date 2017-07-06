@@ -2,7 +2,6 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +23,152 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
+}
+
+/*----------------------
+        Clear fix
+----------------------*/
+.cf:before,
+.cf:after {
+  display: table;
+  content: "";
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+/*----------------------
+          Base
+----------------------*/
+body {
+  font-size: 17px;
+  font-family: sans-serif;
+}
+
+a {
+  color: #0645ad;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*----------------------
+          Module
+----------------------*/
+/*----------------------
+          Layout
+----------------------*/
+header {
+  float: right;
+  padding-top: 10px;
+  padding-right: 13px;
+  border: 1px solid #000;
+}
+
+/*----------------------
+          Body
+----------------------*/
+/*-- header --*/
+header {
+  font-size: 13.5px;
+  line-height: 15px;
+}
+header li {
+  display: inline-block;
+  padding-right: 5px;
+}
+header li:first-child {
+  color: #707070;
+}
+header li:first-child i {
+  padding-right: 4px;
+}
+header li:last-child {
+  padding-right: 0;
+}
+
+/*-- main --*/
+#main-sidebar {
+  width: 150px;
+  padding-left: 20px;
+  padding-right: 10px;
+  font-size: 13.5px;
+  line-height: 15px;
+  border: 1px solid #000;
+}
+#main-sidebar img {
+  margin-bottom: 20px;
+}
+#main-sidebar div {
+  position: relative;
+}
+#main-sidebar div .contents-title {
+  margin-bottom: 6px;
+  background-image: url("../img/main_sidebar_boder.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 24px;
+}
+#main-sidebar div ul {
+  margin-bottom: 20px;
+}
+#main-sidebar div ul li {
+  padding: 5px 0;
+}
+#main-sidebar div .contents-icon {
+  position: absolute;
+  right: 5px;
+  top: -10px;
+  color: #808080;
+  font-size: 17px;
+}
+#main-sidebar div .contents-icon:hover {
+  color: #555;
+}
+#main-sidebar div .link-add {
+  float: right;
+  color: #808080;
+}
+#main-sidebar div .link-add:hover {
+  color: #0645ad;
 }
