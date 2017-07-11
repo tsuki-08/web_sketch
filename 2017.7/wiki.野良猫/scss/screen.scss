@@ -26,6 +26,9 @@
 body {
 	font-size: 17px;
 	font-family: sans-serif;
+	background: #f6f6f6;
+	color: #000;
+	// background: linear-gradient( #fff 10px, #f6f6f6);
 }
 a {
 	color: #0645ad;
@@ -42,12 +45,6 @@ a:hover {
 /*----------------------
           Layout
 ----------------------*/
-header {
-	float: right;
-	padding-top: 10px;
-	padding-right: 13px;
-	border: 1px solid #000;
-}
 
 /*----------------------
           Body
@@ -57,6 +54,14 @@ header {
 header {
 	font-size: 13.5px;
 	line-height: 15px;
+	border: 1px solid #000;
+}
+header > ul{
+	display: inline-block;
+	float: right;
+	padding-top: 10px;
+	padding-right: 13px;
+	border: 1px solid #000;
 	li {
 		display: inline-block;
 		padding-right: 5px;
@@ -71,10 +76,35 @@ header {
 		padding-right: 0;
 	}
 }
+header > div {
+	padding-top: 50px;
+	padding-left: 200px;
+	font-size: 14.5px;
+	ul, form {
+		display: inline-block;
+		border: 1px solid #000;
+	}
+	ul li {
+		display: inline-block;
+		a {
+			display: inline-block;
+			padding: 10px;
+			background: #e8f2f8;
+		}
+	}
+	form {
+		float: right;
+	}
+	ul:nth-of-type(2) {
+		float: right;
+	}
+}
 
 /*-- main --*/
 #main-sidebar {
 	width: 150px;
+	position: relative;
+	top: -73px;
 	padding-left: 20px;
 	padding-right: 10px;
 	font-size: 13.5px;

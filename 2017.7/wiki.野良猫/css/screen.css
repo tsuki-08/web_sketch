@@ -81,6 +81,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 body {
   font-size: 17px;
   font-family: sans-serif;
+  background: #f6f6f6;
+  color: #000;
 }
 
 a {
@@ -98,13 +100,6 @@ a:hover {
 /*----------------------
           Layout
 ----------------------*/
-header {
-  float: right;
-  padding-top: 10px;
-  padding-right: 13px;
-  border: 1px solid #000;
-}
-
 /*----------------------
           Body
 ----------------------*/
@@ -112,24 +107,59 @@ header {
 header {
   font-size: 13.5px;
   line-height: 15px;
+  border: 1px solid #000;
 }
-header li {
+
+header > ul {
+  display: inline-block;
+  float: right;
+  padding-top: 10px;
+  padding-right: 13px;
+  border: 1px solid #000;
+}
+header > ul li {
   display: inline-block;
   padding-right: 5px;
 }
-header li:first-child {
+header > ul li:first-child {
   color: #707070;
 }
-header li:first-child i {
+header > ul li:first-child i {
   padding-right: 4px;
 }
-header li:last-child {
+header > ul li:last-child {
   padding-right: 0;
+}
+
+header > div {
+  padding-top: 50px;
+  padding-left: 200px;
+  font-size: 14.5px;
+}
+header > div ul, header > div form {
+  display: inline-block;
+  border: 1px solid #000;
+}
+header > div ul li {
+  display: inline-block;
+}
+header > div ul li a {
+  display: inline-block;
+  padding: 10px;
+  background: #e8f2f8;
+}
+header > div form {
+  float: right;
+}
+header > div ul:nth-of-type(2) {
+  float: right;
 }
 
 /*-- main --*/
 #main-sidebar {
   width: 150px;
+  position: relative;
+  top: -73px;
   padding-left: 20px;
   padding-right: 10px;
   font-size: 13.5px;
