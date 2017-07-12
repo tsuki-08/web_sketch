@@ -16,25 +16,10 @@
 			<li><a href="">アカウント作成</a></li>
 			<li><a href="">ログイン</a></li>
 		</ul>
-		<div>
-			<ul>
-				<li>ページ</li>
-				<li><a href="">ノート</a></li>
-			</ul>
-			<form action="">
-				<input type="search" placeholder="Wikipedia内を検索">
-				<i class="fa fa-search" aria-hidden="true"></i>
-			</form>
-			<ul>
-				<li>閲覧</li>
-				<li><a href="">ソースを表示</a></li>
-				<li><a href="">履歴表示</a></li>
-			</ul>
-		</div>
 	</header>
-	<main>
+	<main class="cf">
 		<div id="main-sidebar" class="cf">
-			<img src="img/wiki_title_img.png" alt="">
+			<img class="site-main-icon" src="img/wiki_title_img.png" alt="">
 			<div>
 				<ul>
 					<li><a href="">メインページ</a></li>
@@ -85,7 +70,28 @@
 				<a href="" class="link-add"><i class="fa fa-pencil" aria-hidden="true"></i>リンクを追加</a>
 			</div>
 		</div><!-- /#main-sidebar -->
-		<div id="main-body"></div>
+		<div id="main-body" class="cf">
+			<div class="main-body-header cf">
+				<ul class="left">
+					<li><a class="bg-white" href="">ページ</a>
+					<li><a href="">ノート</a></li>
+				</ul>
+				<form class="right" action="">
+					<input type="search" placeholder="Wikipedia内を検索">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</form>
+				<ul class="right">
+					<li><a  class="bg-white" href="">閲覧</a>
+					<li><a href="">ソースを表示</a>
+					<li><a href="">履歴表示</a></li>
+				</ul>
+			</div><!-- /#main-body-header -->
+			<div class="main-body-main cf">
+				<div>
+					<p>コンテンツ</p>
+				</div>
+			</div>
+		</div><!-- /#main-body -->
 	</main>
 	<footer>
 	</footer>

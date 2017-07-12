@@ -24,6 +24,7 @@
           Base
 ----------------------*/
 body {
+	width: 100%;
 	font-size: 17px;
 	font-family: sans-serif;
 	background: #f6f6f6;
@@ -76,41 +77,19 @@ header > ul{
 		padding-right: 0;
 	}
 }
-header > div {
-	padding-top: 50px;
-	padding-left: 200px;
-	font-size: 14.5px;
-	ul, form {
-		display: inline-block;
-		border: 1px solid #000;
-	}
-	ul li {
-		display: inline-block;
-		a {
-			display: inline-block;
-			padding: 10px;
-			background: #e8f2f8;
-		}
-	}
-	form {
-		float: right;
-	}
-	ul:nth-of-type(2) {
-		float: right;
-	}
-}
 
 /*-- main --*/
 #main-sidebar {
 	width: 150px;
-	position: relative;
-	top: -73px;
+	float: left;
+	// position: relative;
+	// top: -73px;
 	padding-left: 20px;
 	padding-right: 10px;
 	font-size: 13.5px;
 	line-height: 15px;
 	border: 1px solid #000;
-	img {
+	.site-main-icon {
 		margin-bottom: 20px;
 	}
 	div {
@@ -147,4 +126,79 @@ header > div {
 			color: #0645ad;
 		}
 	}
+}
+
+#main-body {
+	// float: left;
+	// border: 1px dotted red;
+	margin-top: 15px;
+	margin-left: 200px;
+
+}
+.main-body-header {
+	// width: 100%;
+	height: 44px;
+	font-size: 14.5px;
+	// border-bottom: 1px solid #a7d7f9;
+	border-bottom: 1px solid #a7d7f9;
+	ul, li {
+		display: inline-block;
+	}
+	li {
+		border-image: url(../img/main_header_border.png) 1 stretch;
+		border-width: 0 0 0 1px;
+		border-style: solid;
+		a {
+			display: inline-block;
+			padding: 22px 10px 8px 10px;
+		    background: linear-gradient( #fff 20%, #e8f2f8);
+		    border-bottom: 1px solid #a7d7f9;
+		}
+		.bg-white {
+			background: #fff;
+			color: #000;
+			text-decoration: none;
+			border-bottom: 1px solid transparent;
+		}
+	}
+	li:last-child {
+		border-image: url(../img/main_header_border.png) 1 stretch;
+		border-width: 0 1px 0 1px;
+		border-style: solid;
+	}
+	.left {
+		float: left;
+	}
+	.right {
+		float: right;
+	}
+	form {
+		margin-top: 10px;
+		margin-left: 9px;
+		margin-right: 18px;
+		border: 1px solid #aaa;
+		position: relative;
+		input[type="search"] {
+			height: 25px;
+			width: 225px;
+			border: none;
+			background: #eee;
+			background: linear-gradient( #f6f6f6, #fff);
+			padding-left: 3px;
+		}
+		input::-webkit-input-placeholder{
+   			color: #727780;
+   			font-size: 13px;
+		}
+		i {
+			position: absolute;
+			right: 3px;
+			top: 5px;
+			font-size: 14px;
+			color: #6c6c6c;
+		}
+	}
+}
+.main-body-main {
+	// border: 1px solid #a7d7f9;
 }
