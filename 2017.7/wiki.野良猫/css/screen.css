@@ -101,14 +101,19 @@ a:hover {
 /*----------------------
           Layout
 ----------------------*/
+main {
+  margin-top: -42px;
+}
+
 /*----------------------
           Body
 ----------------------*/
 /*-- header --*/
 header {
+  height: 90px;
+  background: linear-gradient(#fff 50%, #f6f6f6);
   font-size: 13.5px;
   line-height: 15px;
-  border: 1px solid #000;
 }
 
 header > ul {
@@ -116,7 +121,6 @@ header > ul {
   float: right;
   padding-top: 10px;
   padding-right: 13px;
-  border: 1px solid #000;
 }
 header > ul li {
   display: inline-block;
@@ -136,11 +140,12 @@ header > ul li:last-child {
 #main-sidebar {
   width: 150px;
   float: left;
+  margin-top: -48px;
   padding-left: 20px;
   padding-right: 10px;
   font-size: 13.5px;
   line-height: 15px;
-  border: 1px solid #000;
+  border: 1px dashed #000;
 }
 #main-sidebar .site-main-icon {
   margin-bottom: 20px;
@@ -180,7 +185,6 @@ header > ul li:last-child {
 }
 
 #main-body {
-  margin-top: 15px;
   margin-left: 200px;
 }
 
@@ -193,14 +197,14 @@ header > ul li:last-child {
   display: inline-block;
 }
 .main-body-header li {
-  border-image: url(../img/main_header_border.png) 1 stretch;
+  border-image: url("../img/main_header_border.png") 1 stretch;
   border-width: 0 0 0 1px;
   border-style: solid;
 }
 .main-body-header li a {
   display: inline-block;
   padding: 22px 10px 8px 10px;
-  background: linear-gradient(#fff 20%, #e8f2f8);
+  background: linear-gradient(#fff 30%, #e8f2f8);
   border-bottom: 1px solid #a7d7f9;
 }
 .main-body-header li .bg-white {
@@ -245,4 +249,22 @@ header > ul li:last-child {
   top: 5px;
   font-size: 14px;
   color: #6c6c6c;
+}
+
+.main-body-main {
+  border: solid #a7d7f9;
+  border-width: 0 0 1px 1px;
+  padding: 27px 29px;
+  background: #fff;
+}
+.main-body-main .title-box {
+  border-bottom: 1px solid #a2a9b1;
+  padding-bottom: 5px;
+}
+.main-body-main .title-box h1 {
+  display: inline-block;
+  font-size: 32.5px;
+}
+.main-body-main .title-box .rock_icon {
+  float: right;
 }

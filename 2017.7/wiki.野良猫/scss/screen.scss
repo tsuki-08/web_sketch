@@ -29,7 +29,6 @@ body {
 	font-family: sans-serif;
 	background: #f6f6f6;
 	color: #000;
-	// background: linear-gradient( #fff 10px, #f6f6f6);
 }
 a {
 	color: #0645ad;
@@ -46,6 +45,9 @@ a:hover {
 /*----------------------
           Layout
 ----------------------*/
+main {
+	margin-top: -42px;
+}
 
 /*----------------------
           Body
@@ -53,16 +55,16 @@ a:hover {
 
 /*-- header --*/
 header {
+	height: 90px;
+	background: linear-gradient( #fff 50%, #f6f6f6);
 	font-size: 13.5px;
 	line-height: 15px;
-	border: 1px solid #000;
 }
 header > ul{
 	display: inline-block;
 	float: right;
 	padding-top: 10px;
 	padding-right: 13px;
-	border: 1px solid #000;
 	li {
 		display: inline-block;
 		padding-right: 5px;
@@ -82,13 +84,12 @@ header > ul{
 #main-sidebar {
 	width: 150px;
 	float: left;
-	// position: relative;
-	// top: -73px;
+	margin-top: -48px;
 	padding-left: 20px;
 	padding-right: 10px;
 	font-size: 13.5px;
 	line-height: 15px;
-	border: 1px solid #000;
+	border: 1px dashed #000;
 	.site-main-icon {
 		margin-bottom: 20px;
 	}
@@ -99,7 +100,6 @@ header > ul{
 			background-image: url("../img/main_sidebar_boder.png");
 			background-position: bottom;
 			background-repeat: no-repeat;
-			// border: 1px dashed #000;
 			height: 24px;
 		}
 		ul {
@@ -129,29 +129,24 @@ header > ul{
 }
 
 #main-body {
-	// float: left;
-	// border: 1px dotted red;
-	margin-top: 15px;
 	margin-left: 200px;
 
 }
 .main-body-header {
-	// width: 100%;
 	height: 44px;
 	font-size: 14.5px;
-	// border-bottom: 1px solid #a7d7f9;
 	border-bottom: 1px solid #a7d7f9;
 	ul, li {
 		display: inline-block;
 	}
 	li {
-		border-image: url(../img/main_header_border.png) 1 stretch;
+		border-image: url("../img/main_header_border.png") 1 stretch;
 		border-width: 0 0 0 1px;
 		border-style: solid;
 		a {
 			display: inline-block;
 			padding: 22px 10px 8px 10px;
-		    background: linear-gradient( #fff 20%, #e8f2f8);
+		    background: linear-gradient( #fff 30%, #e8f2f8);
 		    border-bottom: 1px solid #a7d7f9;
 		}
 		.bg-white {
@@ -200,5 +195,19 @@ header > ul{
 	}
 }
 .main-body-main {
-	// border: 1px solid #a7d7f9;
+	border: solid #a7d7f9;
+	border-width: 0 0 1px 1px;
+	padding: 27px 29px;
+	background: #fff;
+	.title-box {
+		border-bottom: 1px solid #a2a9b1;
+		padding-bottom: 5px;
+		h1 {
+		display: inline-block;
+		font-size: 32.5px;
+		}
+		.rock_icon {
+			float: right;
+		}
+	}
 }
