@@ -98,6 +98,18 @@ a:hover {
 /*----------------------
           Module
 ----------------------*/
+.bold {
+  font-weight: bold;
+}
+
+.f-blue {
+  color: #0645ad;
+}
+
+small {
+  font-size: 12.7px;
+}
+
 /*----------------------
           Layout
 ----------------------*/
@@ -257,14 +269,43 @@ header > ul li:last-child {
   padding: 27px 29px;
   background: #fff;
 }
-.main-body-main .title-box {
+.main-body-main .section-top .title-box {
   border-bottom: 1px solid #a2a9b1;
   padding-bottom: 5px;
 }
-.main-body-main .title-box h1 {
+.main-body-main .section-top .title-box h1 {
   display: inline-block;
   font-size: 32.5px;
 }
-.main-body-main .title-box .rock_icon {
+.main-body-main .section-top .title-box .rock_icon {
   float: right;
+}
+.main-body-main .section-top .caution-box {
+  width: 580px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 15px 0 5px 16px;
+  border: 1px solid #aaa;
+  border-left: 10px solid #f28500;
+  background: #fbfbfb;
+  font-size: 15px;
+  line-height: 24.5px;
+  box-sizing: border-box;
+}
+.main-body-main .section-top .caution-box img, .main-body-main .section-top .caution-box div {
+  display: inline-block;
+  vertical-align: middle;
+}
+.main-body-main .section-top .caution-box div {
+  width: 483px;
+  margin-left: 10px;
+}
+.main-body-main .section-top .caution-box div p {
+  margin-bottom: 5px;
+}
+.main-body-main .section-top .caution-box div ul {
+  margin-left: 6px;
+  padding-left: 1em;
+  text-indent: -1em;
 }
