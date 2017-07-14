@@ -309,7 +309,7 @@ header > ul li:last-child {
   padding-left: 1em;
   text-indent: -1em;
 }
-.main-body-main .section-top figure, .main-body-main .section-top img {
+.main-body-main .section-top figure, .main-body-main .section-top figure img {
   border: 1px solid #c8ccd1;
 }
 .main-body-main .section-top figure {
@@ -330,4 +330,8 @@ header > ul li:last-child {
   bottom: 15px;
   font-size: 10px;
   color: #000;
+}
+.main-body-main .section-top > p {
+  line-height: 27.1px;
+  margin-bottom: 10px;
 }

@@ -249,7 +249,7 @@ header > ul{
 				}
 			}
 		}
-		figure, img {
+		figure, figure img {
 			border: 1px solid #c8ccd1;
 		}
 		figure {
@@ -270,6 +270,10 @@ header > ul{
 				font-size: 10px;
 				color: #000;
 			}
+		}
+		> p {
+			line-height: 27.1px;
+			margin-bottom: 10px;
 		}
 	}
 }
