@@ -309,3 +309,25 @@ header > ul li:last-child {
   padding-left: 1em;
   text-indent: -1em;
 }
+.main-body-main .section-top figure, .main-body-main .section-top img {
+  border: 1px solid #c8ccd1;
+}
+.main-body-main .section-top figure {
+  position: relative;
+  float: right;
+  margin-left: 20px;
+  padding: 3px 3px 8px 3px;
+  background: #f8f9fa;
+}
+.main-body-main .section-top figure figcaption {
+  margin-top: 3px;
+  margin-left: 2px;
+  font-size: 15px;
+}
+.main-body-main .section-top figure a {
+  position: absolute;
+  right: 8px;
+  bottom: 15px;
+  font-size: 10px;
+  color: #000;
+}

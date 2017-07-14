@@ -249,5 +249,27 @@ header > ul{
 				}
 			}
 		}
+		figure, img {
+			border: 1px solid #c8ccd1;
+		}
+		figure {
+			position: relative;
+			float: right;
+			margin-left: 20px;
+			padding: 3px 3px 8px 3px;
+			background: #f8f9fa;
+			figcaption {
+				margin-top: 3px;
+				margin-left: 2px;
+				font-size: 15px;
+			}
+			a {
+				position: absolute;
+				right: 8px;
+				bottom: 15px;
+				font-size: 10px;
+				color: #000;
+			}
+		}
 	}
 }
