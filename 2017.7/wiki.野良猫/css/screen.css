@@ -106,6 +106,10 @@ a:hover {
   color: #0645ad;
 }
 
+.f-black {
+  color: #000;
+}
+
 small {
   font-size: 12.7px;
 }
@@ -334,4 +338,26 @@ header > ul li:last-child {
 .main-body-main .section-top > p {
   line-height: 27.1px;
   margin-bottom: 10px;
+}
+.main-body-main .section-top .topic {
+  width: 290px;
+  padding: 10px 7px 15px;
+  background: #f8f9fa;
+  border: 1px solid #a2a9b1;
+  font-size: 16.1px;
+  box-sizing: border-box;
+}
+.main-body-main .section-top .topic h4 {
+  margin-bottom: 7px;
+  text-align: center;
+  line-height: 20.9px;
+}
+.main-body-main .section-top .topic ol {
+  line-height: 25.8px;
+}
+.main-body-main .section-top .topic ol .topic-No-pr {
+  padding-right: 8px;
+}
+.main-body-main .section-top .topic ol ol {
+  margin-left: 30px;
 }
