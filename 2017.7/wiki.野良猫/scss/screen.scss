@@ -1,4 +1,4 @@
-/* Welcome to Compass.
+/*Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
@@ -37,7 +37,23 @@ a {
 a:hover {
 	text-decoration: underline;
 }
-
+h2 {
+	margin-bottom: 8px;
+	border-bottom: 1px solid #a2a9b1;
+	line-height: 33.1px;
+	font-size: 25.4px;
+}
+h3 {
+	padding: 10px 0;
+	line-height: 32.6px;
+	font-size: 20.3px;
+	font-weight: bold;
+}
+/* cssリセットされるので再指定 */
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
 /*----------------------
           Module
 ----------------------*/
@@ -50,8 +66,17 @@ a:hover {
 .f-black {
 	color: #000;
 }
+.link-red {
+	color: #ba0000;
+}
+.link-small {
+	font-size: 13px;
+}
 small {
 	font-size: 12.7px;
+}
+.fs-oblique {
+	font-style: oblique;
 }
 
 /*----------------------
@@ -81,7 +106,7 @@ header > ul{
 		display: inline-block;
 		padding-right: 5px;
 	}
-	li:first-child{
+	li:first-child {
 		color: #707070;
 		i {
 			padding-right: 4px;
@@ -301,5 +326,39 @@ header > ul{
 				margin-left: 30px;
 			}
 		}
+	}/* /.section-top */
+	section {
+		p , li {
+			line-height: 27.1px;
+		}
+		p {
+			margin-bottom: 10px;
+		}
+		p:last-child , ul {
+			margin-bottom: 20px;
+		}
+		.underline {
+			border-bottom: 1px dashed #222;
+		}
+		ul {
+			margin-left: 10px;
+		}
+		/* /.fa-external-link */
+		i {
+			margin-left: 3px;
+			font-size: 10px;
+		}
 	}
-}
+	section.footnote {
+		font-size: 15.3px;
+		ol {
+			margin-left: 50px;
+			margin-bottom: 20px;
+			list-style-type: decimal;
+			li {
+				margin-bottom: 0;
+				line-height: 24.4px;
+			}
+		}
+	}
+}/* /.main-body-main */

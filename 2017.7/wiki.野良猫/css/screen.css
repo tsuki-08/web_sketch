@@ -1,4 +1,5 @@
-/* Welcome to Compass.
+@charset "UTF-8";
+/*Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
@@ -95,6 +96,26 @@ a:hover {
   text-decoration: underline;
 }
 
+h2 {
+  margin-bottom: 8px;
+  border-bottom: 1px solid #a2a9b1;
+  line-height: 33.1px;
+  font-size: 25.4px;
+}
+
+h3 {
+  padding: 10px 0;
+  line-height: 32.6px;
+  font-size: 20.3px;
+  font-weight: bold;
+}
+
+/* cssリセットされるので再指定 */
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
 /*----------------------
           Module
 ----------------------*/
@@ -110,8 +131,20 @@ a:hover {
   color: #000;
 }
 
+.link-red {
+  color: #ba0000;
+}
+
+.link-small {
+  font-size: 13px;
+}
+
 small {
   font-size: 12.7px;
+}
+
+.fs-oblique {
+  font-style: oblique;
 }
 
 /*----------------------
@@ -272,6 +305,7 @@ header > ul li:last-child {
   border-width: 0 0 1px 1px;
   padding: 27px 29px;
   background: #fff;
+  /* /.section-top */
 }
 .main-body-main .section-top .title-box {
   border-bottom: 1px solid #a2a9b1;
@@ -361,3 +395,39 @@ header > ul li:last-child {
 .main-body-main .section-top .topic ol ol {
   margin-left: 30px;
 }
+.main-body-main section {
+  /* /.fa-external-link */
+}
+.main-body-main section p, .main-body-main section li {
+  line-height: 27.1px;
+}
+.main-body-main section p {
+  margin-bottom: 10px;
+}
+.main-body-main section p:last-child, .main-body-main section ul {
+  margin-bottom: 20px;
+}
+.main-body-main section .underline {
+  border-bottom: 1px dashed #222;
+}
+.main-body-main section ul {
+  margin-left: 10px;
+}
+.main-body-main section i {
+  margin-left: 3px;
+  font-size: 10px;
+}
+.main-body-main section.footnote {
+  font-size: 15.3px;
+}
+.main-body-main section.footnote ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+  list-style-type: decimal;
+}
+.main-body-main section.footnote ol li {
+  margin-bottom: 0;
+  line-height: 24.4px;
+}
+
+/* /.main-body-main */
