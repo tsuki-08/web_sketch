@@ -114,6 +114,7 @@ h3 {
 sup {
   vertical-align: super;
   font-size: smaller;
+  line-height: 1em;
 }
 
 /*----------------------
@@ -168,12 +169,12 @@ header {
 header > ul {
   display: inline-block;
   float: right;
-  padding-top: 10px;
-  padding-right: 13px;
+  margin-top: 13px;
+  margin-right: 11.5px;
 }
 header > ul li {
   display: inline-block;
-  padding-right: 5px;
+  margin-right: 6.5px;
 }
 header > ul li:first-child {
   color: #707070;
@@ -187,38 +188,39 @@ header > ul li:last-child {
 
 /*-- main --*/
 #main-sidebar {
-  width: 150px;
+  width: 198px;
   float: left;
-  margin-top: -48px;
-  padding-left: 20px;
-  padding-right: 10px;
+  margin-top: -45px;
+  padding-left: 30px;
+  padding-right: 22px;
   font-size: 13.5px;
-  line-height: 15px;
-  border: 1px dashed #000;
+  line-height: 15.1px;
+  box-sizing: border-box;
 }
 #main-sidebar .site-main-icon {
-  margin-bottom: 20px;
+  margin-left: 2px;
+  margin-bottom: 27px;
 }
 #main-sidebar div {
   position: relative;
 }
 #main-sidebar div .contents-title {
   margin-bottom: 6px;
-  background-image: url("../img/main_sidebar_boder.png");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  height: 24px;
+  border-image: url("../img/main_sidebar_boder.png") 1 stretch;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  height: 21px;
 }
 #main-sidebar div ul {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 #main-sidebar div ul li {
-  padding: 5px 0;
+  padding: 3.4px 0;
 }
 #main-sidebar div .contents-icon {
   position: absolute;
-  right: 5px;
-  top: -10px;
+  right: -2px;
+  top: -12px;
   color: #808080;
   font-size: 17px;
 }
@@ -227,6 +229,8 @@ header > ul li:last-child {
 }
 #main-sidebar div .link-add {
   float: right;
+  margin-top: -2px;
+  margin-right: 4px;
   color: #808080;
 }
 #main-sidebar div .link-add:hover {
@@ -234,13 +238,17 @@ header > ul li:last-child {
 }
 
 #main-body {
-  margin-left: 200px;
+  margin-left: 198px;
+  margin-top: -3px;
 }
 
 .main-body-header {
   height: 44px;
   font-size: 14.5px;
   border-bottom: 1px solid #a7d7f9;
+}
+.main-body-header ul {
+  margin-top: -3px;
 }
 .main-body-header ul, .main-body-header li {
   display: inline-block;
@@ -252,7 +260,7 @@ header > ul li:last-child {
 }
 .main-body-header li a {
   display: inline-block;
-  padding: 22px 10px 8px 10px;
+  padding: 21px 6px 9px 7px;
   background: linear-gradient(#fff 30%, #e8f2f8);
   border-bottom: 1px solid #a7d7f9;
 }
@@ -274,36 +282,39 @@ header > ul li:last-child {
   float: right;
 }
 .main-body-header form {
-  margin-top: 10px;
+  margin-top: 9px;
   margin-left: 9px;
   margin-right: 18px;
   border: 1px solid #aaa;
   position: relative;
+  box-sizing: border-box;
 }
 .main-body-header form input[type="search"] {
   height: 25px;
-  width: 225px;
+  width: 222px;
   border: none;
   background: #eee;
   background: linear-gradient(#f6f6f6, #fff);
-  padding-left: 3px;
 }
 .main-body-header form input::-webkit-input-placeholder {
   color: #727780;
   font-size: 13px;
+  position: absolute;
+  top: 3px;
+  left: 2.5px;
 }
 .main-body-header form i {
   position: absolute;
   right: 3px;
   top: 5px;
-  font-size: 14px;
+  font-size: 13px;
   color: #6c6c6c;
 }
 
 .main-body-main {
   border: solid #a7d7f9;
   border-width: 0 0 1px 1px;
-  padding: 27px 29px;
+  padding: 28px 27px 23px;
   background: #fff;
   /* /.section-top */
 }
@@ -319,33 +330,37 @@ header > ul li:last-child {
   float: right;
 }
 .main-body-main .section-top .caution-box {
-  width: 580px;
+  width: 575px;
   margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  padding: 15px 0 5px 16px;
+  margin-top: 19px;
+  margin-bottom: 9px;
+  padding: 13px 0 5px;
   border: 1px solid #aaa;
   border-left: 10px solid #f28500;
   background: #fbfbfb;
-  font-size: 15px;
+  font-size: 15.3px;
   line-height: 24.5px;
-  box-sizing: border-box;
+  position: relative;
 }
-.main-body-main .section-top .caution-box img, .main-body-main .section-top .caution-box div {
-  display: inline-block;
-  vertical-align: middle;
+.main-body-main .section-top .caution-box img {
+  position: absolute;
+  top: 57px;
+  left: 16px;
 }
 .main-body-main .section-top .caution-box div {
-  width: 483px;
-  margin-left: 10px;
+  width: 490px;
+  margin-left: 72px;
 }
 .main-body-main .section-top .caution-box div p {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 .main-body-main .section-top .caution-box div ul {
-  margin-left: 6px;
-  padding-left: 1em;
-  text-indent: -1em;
+  margin-left: 7px;
+  padding-left: 17px;
+  text-indent: -17px;
+}
+.main-body-main .section-top .caution-box div ul span:first-child {
+  margin-right: 2px;
 }
 .main-body-main .section-top figure, .main-body-main .section-top figure img {
   border: 1px solid #c8ccd1;
@@ -354,12 +369,12 @@ header > ul li:last-child {
   position: relative;
   float: right;
   margin-left: 20px;
-  padding: 3px 3px 8px 3px;
+  padding: 3px 3px 9px 3px;
   background: #f8f9fa;
 }
 .main-body-main .section-top figure figcaption {
   margin-top: 3px;
-  margin-left: 2px;
+  margin-left: 3px;
   font-size: 15px;
 }
 .main-body-main .section-top figure a {
@@ -371,29 +386,53 @@ header > ul li:last-child {
 }
 .main-body-main .section-top > p {
   line-height: 27.1px;
-  margin-bottom: 10px;
+  margin-bottom: 8.2px;
 }
 .main-body-main .section-top .topic {
   width: 290px;
-  padding: 10px 7px 15px;
+  margin-bottom: 25px;
+  padding: 9px 7px 15px;
   background: #f8f9fa;
   border: 1px solid #a2a9b1;
   font-size: 16.1px;
   box-sizing: border-box;
 }
 .main-body-main .section-top .topic h4 {
-  margin-bottom: 7px;
+  margin-left: -4px;
+  margin-bottom: 5px;
   text-align: center;
   line-height: 20.9px;
+}
+.main-body-main .section-top .topic h4 > span:last-child {
+  font-size: 15px;
 }
 .main-body-main .section-top .topic ol {
   line-height: 25.8px;
 }
+.main-body-main .section-top .topic ol li {
+  padding: 1.6px 0;
+}
 .main-body-main .section-top .topic ol .topic-No-pr {
   padding-right: 8px;
 }
+.main-body-main .section-top .topic > ol > li {
+  margin-top: -1px;
+}
+.main-body-main .section-top .topic > ol > li:first-child {
+  margin-bottom: 1px;
+}
 .main-body-main .section-top .topic ol ol {
-  margin-left: 30px;
+  margin-left: 32px;
+}
+.main-body-main .section-top .topic ol ol li:nth-of-type(1) {
+  margin-top: 0px;
+  padding: 0;
+}
+.main-body-main .section-top .topic ol ol li + li {
+  padding: 0.6px 0;
+}
+.main-body-main .section-top .topic ol ol .topic-No-pr {
+  padding-right: 9px;
 }
 .main-body-main section {
   /* /.fa-external-link */
@@ -448,7 +487,7 @@ header > ul li:last-child {
   border-spacing: 2px;
   background: #fdfdfd;
   font-size: 14.9px;
-  line-height: 24.9px;
+  line-height: 24px;
 }
 .main-body-main section:last-child table th {
   width: 105px;
@@ -461,6 +500,7 @@ header > ul li:last-child {
 }
 .main-body-main section:last-child table li {
   display: inline-block;
+  margin: -1.5px 0;
 }
 .main-body-main section:last-child table li span {
   font-size: 11.5px;
@@ -497,10 +537,10 @@ header > ul li:last-child {
   text-align: right;
 }
 .main-body-main section:last-child table tbody td {
-  padding-right: 105px;
+  padding-right: 104.9px;
 }
 .main-body-main section:last-child table tbody td ul {
-  margin-left: 5px;
+  margin-left: 4px;
 }
 .main-body-main section:last-child table tbody .ul-bg-gray {
   background: #f7f7f7;
@@ -511,7 +551,7 @@ header > ul li:last-child {
 .main-body-main section:last-child > ul:last-child {
   height: 39px;
   border: 1px solid #a2a9b1;
-  margin-top: 19px;
+  margin-top: 17px;
   margin-left: 0;
   background: #f8f9fa;
   box-sizing: border-box;
@@ -529,20 +569,20 @@ header > ul li:last-child {
 /* /.main-body-main */
 /*-- footer --*/
 footer {
-  margin-top: 21px;
-  margin-right: 24px;
+  margin-top: 27px;
+  margin-right: 22px;
   padding-bottom: 29px;
   font-size: 12.6px;
   line-height: 17.6px;
 }
 footer p, footer ul {
-  margin-left: 225px;
+  margin-left: 220px;
 }
 footer p {
-  margin-bottom: 13px;
+  margin-bottom: 12px;
 }
 footer ul {
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 }
 footer ul li {
   display: inline-block;
