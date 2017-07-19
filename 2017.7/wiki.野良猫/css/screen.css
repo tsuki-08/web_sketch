@@ -154,7 +154,7 @@ small {
 /*----------------------
           Layout
 ----------------------*/
-main {
+article {
   margin-top: -42px;
 }
 
@@ -189,7 +189,7 @@ header > ul li:last-child {
   padding-right: 0;
 }
 
-/*-- main --*/
+/*-- article --*/
 #main-sidebar {
   width: 198px;
   float: left;
