@@ -60,6 +60,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /*----------------------
+      compass 変数
+----------------------*/
+/*----------------------
         Clear fix
 ----------------------*/
 .cf:before,
