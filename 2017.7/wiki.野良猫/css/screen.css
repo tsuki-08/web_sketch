@@ -487,20 +487,16 @@ header > ul li:last-child {
   border-spacing: 2px;
   background: #fdfdfd;
   font-size: 14.9px;
-  line-height: 24px;
+  line-height: 23.9px;
 }
 .main-body-main section:last-child table th {
   width: 105px;
   padding-right: 13px;
   box-sizing: border-box;
 }
-.main-body-main section:last-child table th.underlayer-bg {
-  width: 165px;
-  background: #e6e6ff;
-}
 .main-body-main section:last-child table li {
   display: inline-block;
-  margin: -1.5px 0;
+  margin-top: -4px;
 }
 .main-body-main section:last-child table li span {
   font-size: 11.5px;
@@ -510,9 +506,10 @@ header > ul li:last-child {
   background: #ccccff;
 }
 .main-body-main section:last-child table thead th {
+  height: 28px;
   position: relative;
-  padding: 3px 0;
   text-align: center;
+  font-size: 16.4px;
 }
 .main-body-main section:last-child table thead th span:first-child {
   position: absolute;
@@ -525,13 +522,14 @@ header > ul li:last-child {
 .main-body-main section:last-child table thead th span:last-child {
   position: absolute;
   right: 13px;
+  font-size: 14.9px;
 }
 .main-body-main section:last-child table tbody th, .main-body-main section:last-child table tfoot th {
   background: #ddddff;
 }
-.main-body-main section:last-child table tbody li, .main-body-main section:last-child table tfoot li {
-  height: 23px;
-  padding: 0;
+.main-body-main section:last-child table tbody th.underlayer-bg, .main-body-main section:last-child table tfoot th.underlayer-bg {
+  width: 165px;
+  background: #e6e6ff;
 }
 .main-body-main section:last-child table tbody th {
   text-align: right;
@@ -540,13 +538,20 @@ header > ul li:last-child {
   padding-right: 104.9px;
 }
 .main-body-main section:last-child table tbody td ul {
-  margin-left: 4px;
+  padding-left: 4px;
 }
 .main-body-main section:last-child table tbody .ul-bg-gray {
   background: #f7f7f7;
 }
 .main-body-main section:last-child table tfoot th {
+  padding-left: 15px;
   text-align: center;
+}
+.main-body-main section:last-child table tfoot th ul {
+  height: 25px;
+}
+.main-body-main section:last-child table tfoot th li {
+  margin: 0;
 }
 .main-body-main section:last-child > ul:last-child {
   height: 39px;
@@ -559,11 +564,12 @@ header > ul li:last-child {
 .main-body-main section:last-child > ul:last-child li {
   display: inline-block;
   margin-top: 8px;
-  padding: 0 5px;
+  padding-left: 5px;
   line-height: 21.2px;
 }
 .main-body-main section:last-child > ul:last-child li:nth-of-type(2) {
   border-right: 1px solid #a2a9b1;
+  padding-right: 9px;
 }
 
 /* /.main-body-main */

@@ -172,16 +172,13 @@ header > ul{
 #main-body {
 	margin-left: 198px;
 	margin-top: -3px;
-	// border: 1px solid #000;
 
 }
 .main-body-header {
 	height: 44px;
-	// border: 1px solid #000;
 	font-size: 14.5px;
 	border-bottom: 1px solid #a7d7f9;
 	ul {
-		// border: 1px solid #000;
 		margin-top: -3px;
 	}
 	ul, li {
@@ -274,9 +271,6 @@ header > ul{
 			font-size: 15.3px;
 			line-height: 24.5px;
 			position: relative;
-			img, div {
-				// display: inline-block;
-			}
 			img {
 				position: absolute;
 				top: 57px;
@@ -285,7 +279,6 @@ header > ul{
 			div {
 				width: 490px;
 				margin-left: 72px;
-				// border: 1px solid #000;
 				p {
 					margin-bottom: 8px;
 				}
@@ -423,19 +416,15 @@ header > ul{
 			border-spacing: 2px;
 			background: #fdfdfd;
 			font-size: 14.9px;
-			line-height: 24px;
+			line-height: 23.9px;
 			th {
 				width: 105px;
 				padding-right: 13px;
 				box-sizing: border-box;
 			}
-			th.underlayer-bg {
-				width: 165px;
-				background: #e6e6ff;
-			}
 			li {
 				display: inline-block;
-				margin: -1.5px 0;
+				margin-top: -4px;
 				span {
 					font-size: 11.5px;
 					line-height: 18.4px;
@@ -444,9 +433,10 @@ header > ul{
 			thead {
 				background: #ccccff;
 				th {
+					height: 28px;
 					position: relative;
-					padding: 3px 0;
 					text-align: center;
+					font-size: 16.4px;
 					span:first-child {
 						position: absolute;
 						top: 1px;
@@ -458,6 +448,7 @@ header > ul{
 					span:last-child {
 						position: absolute;
 						right: 13px;
+						font-size: 14.9px;
 					}
 				}
 			}
@@ -465,9 +456,9 @@ header > ul{
 				th {
 					background: #ddddff;
 				}
-				li {
-					height: 23px;
-					padding: 0;
+				th.underlayer-bg {
+					width: 165px;
+					background: #e6e6ff;
 				}
 			}
 			tbody {
@@ -477,7 +468,7 @@ header > ul{
 				td {
 					padding-right: 104.9px;
 					ul {
-						margin-left: 4px;
+						padding-left: 4px;
 					}
 				}
 				.ul-bg-gray {
@@ -486,10 +477,15 @@ header > ul{
 			}
 			tfoot {
 				th {
+					padding-left: 15px;
 					text-align: center;
+					ul {
+						height: 25px;
+					}
+					li {
+						margin: 0;
+					}
 				}
-			}
-			.tr-img td {
 			}
 		}/* /table */
 		> ul:last-child {
@@ -502,11 +498,12 @@ header > ul{
 			li {
 				display: inline-block;
 				margin-top: 8px;
-				padding: 0 5px;
+				padding-left: 5px;
 				line-height: 21.2px;
 			}
 			li:nth-of-type(2) {
 				border-right: 1px solid #a2a9b1;
+				padding-right: 9px;
 			}
 		}
 	}
