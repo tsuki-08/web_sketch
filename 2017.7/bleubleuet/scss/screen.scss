@@ -4,3 +4,117 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+
+/*-----------------
+Base
+-----------------*/
+body {
+	width: 100%;
+	height: 100%;
+	background-image: url('../img/bg _img.gif');
+	background-repeat: repeat;
+}
+
+/*-----------------
+Module
+-----------------*/
+
+/*-----------------
+Layout
+-----------------*/
+.container {
+	width: 922px;
+	margin: 0 auto;
+}
+
+/*-----------------
+Body
+-----------------*/
+header {
+	height: 174px;
+	padding-top: 62px;
+	// border: 1px solid #000;
+}
+header h1 {
+	display: none;
+}
+
+.header-logo {
+	display: block;
+	border-bottom: 1px solid #000;
+	padding-top: 13px;
+	padding-bottom: 1px;
+	background-image: url('../img/header_line.gif');
+	background-repeat: repeat-x;
+}
+.header-logo img {
+
+}
+header nav li {
+	display: inline-block;
+}
+header nav a {
+	display: block;
+	height: 54px;
+	background-image: url('../img/header_nav.gif');
+}
+header nav .nav-link-news {
+	width: 141px;
+	background-position: left top;
+}
+header nav .nav-link-news:hover {
+	background-position: left bottom;
+}
+header nav .nav-link-brand {
+	width: 149px;
+	background-position: -141px 0;
+}
+header nav .nav-link-brand:hover {
+	background-position: -141px bottom;
+}
+header nav .nav-link-reItem {
+	width: 267px;
+	background-position: -290px 0;
+}
+header nav .nav-link-reItem:hover {
+	background-position: -290px bottom;
+}
+header nav .nav-link-shop {
+	width: 162px;
+	background-position: -557px 0;
+}
+header nav .nav-link-shop:hover {
+	background-position: -557px bottom;
+}
+header nav .nav-link-online {
+	width: 203px;
+	background-position: -719px 0;
+}
+header nav .nav-link-online:hover {
+	background-position: -719px bottom;
+}
+header .header-url-text {
+	margin-top: -3px;
+	border: solid #000;
+	border-width: 1px 0;
+	padding-top: 3px;
+	text-align: center;
+}
+header .nav-office {
+	position: relative;
+	top: -22px;
+	left: 719px;
+}
+header .nav-office li {
+	display: inline-block;
+	height: 19px;
+	padding-left: 9px;
+	margin-right: 10px;
+	background-image: url('../img/header_icon_arrow.png');
+	background-position: left center;
+	background-repeat: no-repeat;
+	// border: 1px solid #000;
+}
+header .nav-office li a:hover {
+	opacity: 0.8;
+}
