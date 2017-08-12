@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -204,6 +205,8 @@ header .nav-office li a:hover {
 .topslide-frame .image {
   z-index: 0;
   position: relative;
+  height: 368px;
+  width: 922px;
 }
 
 .wrapper-topslide ul {
@@ -253,4 +256,66 @@ header .nav-office li a:hover {
 .wrapper-topslide ul .index-04:hover {
   background-image: url("../img/header_index_04.gif");
   background-position: 54px bottom;
+}
+
+/*-- title-topics --*/
+section.topics h2 {
+  margin-top: 76px;
+  margin-bottom: 20px;
+  padding-top: 22px;
+  background-image: url("../img/section2_top_line.gif");
+  background-repeat: no-repeat;
+}
+section.topics h2 .title-topics {
+  display: block;
+  margin: 0 auto;
+}
+section.topics h2 .topics-sub {
+  margin-top: 100px;
+  display: block;
+}
+
+section.topics div {
+  margin-bottom: 35px;
+  border-top: 1px solid #000;
+  text-align: center;
+}
+section.topics div img {
+  position: relative;
+  top: -10px;
+}
+
+section.topics ul {
+  width: 860px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+section.topics ul li {
+  display: inline-block;
+  margin-right: 54px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro";
+}
+section.topics ul li a {
+  display: block;
+  color: #000;
+}
+section.topics ul li a img {
+  border: 1px solid #838697;
+  box-sizing: box-sizing;
+}
+section.topics ul li a:hover {
+  text-decoration: none;
+}
+section.topics ul li a:hover img {
+  opacity: 0.8;
+}
+section.topics ul li:last-child {
+  margin-right: 0;
+}
+
+section.topics ul:last-child {
+  margin-bottom: 65px;
 }
