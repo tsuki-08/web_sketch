@@ -113,7 +113,6 @@ header .nav-office li {
 	background-image: url('../img/header_icon_arrow.png');
 	background-position: left center;
 	background-repeat: no-repeat;
-	// border: 1px solid #000;
 }
 header .nav-office li a:hover {
 	opacity: 0.8;
@@ -128,15 +127,16 @@ header .nav-office li a:hover {
 	background-image: url('../img/topslide_bg_img.gif');
 	justify-content: center;
 	align-items: center;
+	position: relative;
+	z-index: 0;
 }
 .topslide-frame {
 	height: 368px;
 	width: 922px;
 	background-image: url('../img/topslide_frame.gif');
-	z-index: 10;
 	position: relative;
 	.image {
-		z-index: 0;
+		z-index: -1;
 		position: relative;
 		height: 368px;
 		width: 922px;
@@ -191,63 +191,188 @@ header .nav-office li a:hover {
 	}
 }
 
-/*-- title-topics --*/
-section.topics h2 {
-	margin-top: 76px;
-	margin-bottom: 20px;
-	padding-top: 22px;
-	background-image: url('../img/section2_top_line.gif');
-	background-repeat: no-repeat;
-	.title-topics {
-		display: block;
+/*-- section-topics --*/
+section.topics {
+	h2 {
+		margin-top: 76px;
+		margin-bottom: 20px;
+		padding-top: 22px;
+		background-image: url('../img/section2_top_line.gif');
+		background-repeat: no-repeat;
+		.title-topics {
+			display: block;
+			margin: 0 auto;
+		}
+		.topics-sub {
+			margin-top: 100px;
+			display: block;
+		}
+	}
+	div {
+		margin-bottom: 35px;
+		border-top: 1px solid #000;
+		text-align: center;
+		img {
+			position: relative;
+			top: -10px;
+		}
+	}
+	ul {
+		width: 860px;
 		margin: 0 auto;
+		margin-bottom: 30px;
+		li {
+			display: inline-block;
+			margin-right: 54px;
+			text-align: center;
+			font-size: 12px;
+			line-height: 18px;
+			font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro";
+			a {
+				display: block;
+				color: #000;
+				img {
+					border: 1px solid #838697;
+					box-sizing: box-sizing;
+				}
+			}
+			a:hover {
+				text-decoration: none;
+				img {
+					opacity: 0.8;
+				}
+			}
+		}
+		li:last-child {
+		 margin-right: 0;
+		}
 	}
-	.topics-sub {
-		margin-top: 100px;
-		display: block;
+	ul:last-child {
+		margin-bottom: 65px;
 	}
 }
-section.topics div {
-	margin-bottom: 35px;
-	border-top: 1px solid #000;
-	text-align: center;
-	img {
-		position: relative;
-		top: -10px;
+
+/*-- section-news --*/
+section.news {
+	h2 {
+		margin-bottom: 30px;
+		padding-top: 35px;
+		background-image: url('../img/section3_top_lineimg.png');
+		background-repeat: no-repeat;
+		text-align: center;
 	}
-}
-section.topics ul {
-	// display: inline-block;
-	width: 860px;
-	margin: 0 auto;
-	margin-bottom: 30px;
+	> p {
+		margin-bottom: 41px;
+		border-top: 1px solid #000;
+		text-align: center;
+		img {
+			position: relative;
+			top: -10px;
+		}
+	}
 	li {
 		display: inline-block;
-		margin-right: 54px;
-		text-align: center;
-		font-size: 12px;
-		line-height: 18px;
+		width: 33.3%;
+		height: 192px;
+		padding-right: 37px;
+		padding-left: 30px;
+		border-right: 4px double #87827b;
+		vertical-align: top;
+		box-sizing: border-box;
 		font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro";
 		a {
-			display: block;
+			font-size: 14.04px;
+			line-height: 21.06px;
+			font-weight: bold;
 			color: #000;
-			img {
-				border: 1px solid #838697;
-				box-sizing: box-sizing;
-			}
 		}
-		a:hover {
-			text-decoration: none;
-			img {
-				opacity: 0.8;
-			}
-
+		p {
+			margin-top: 23px;
+			font-size: 12px;
+			line-height: 18px;
+			color: #65676d;
 		}
+		p:last-child {
+			margin-top: 14px;
+			font-size: 10px;
+			line-height: 10px;
+			color: #000;
+			font-style: oblique;
+		}
+	}
+	li:first-child {
+		padding-left: 0;
 	}
 	li:last-child {
-		margin-right: 0;
+		border: none;
+		padding-right: 0;
 	}
 }
-section.topics ul:last-child {
-	margin-bottom: 65px;
+section.recommendItem {
+	h2 {
+		margin-top: 125px;
+		padding-top: 42px;
+		background-image: url('../img/section4_top_lineimg.png');
+		background-repeat: no-repeat;
+		text-align: center;
+	}
+	> p {
+		margin-top: 36px;
+		margin-bottom: 20px;
+		border-top: 1px solid #000;
+		text-align: center;
+		img {
+			position: relative;
+			top: -10px;
+		}
+	}
+	ul {
+		// border: 1px solid #000;
+		li {
+			display: inline-block;
+			// width: 33.3%;
+			// border-right: 4px double #847f78;
+			// padding-right: 30px;
+			// padding-left: 30px;
+			box-sizing: border-box;
+			// text-align: center;
+			> .item-image {
+				border: 5px solid #000;
+				box-sizing: border-box;
+			}
+			div {
+				text-align: center;
+				a:first-child {
+					padding-right: 8px;
+				}
+				a:last-child {
+					padding-left: 8px;
+				}
+			}
+			> p {
+				width: 268px;
+				margin-top: 20px;
+				font-size: 12px;
+				line-height: 18px;
+				color: #616268;
+				text-align: left;
+			}
+		}
+		li:first-child {
+			padding-right: 28px;
+			padding-left: 0;
+			// border: 1px solid #000;
+		}
+		li:nth-of-type(2) {
+			border-right: 4px double #847f78;
+			border-left: 4px double #847f78;
+			padding-right: 22px;
+			padding-left: 30px;
+		}
+		li:last-child {
+			border: none;
+			padding-right: 0;
+			padding-left: 30px;
+		}
+	}
 }

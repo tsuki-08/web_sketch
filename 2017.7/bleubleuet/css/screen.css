@@ -193,17 +193,18 @@ header .nav-office li a:hover {
   background-image: url("../img/topslide_bg_img.gif");
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 0;
 }
 
 .topslide-frame {
   height: 368px;
   width: 922px;
   background-image: url("../img/topslide_frame.gif");
-  z-index: 10;
   position: relative;
 }
 .topslide-frame .image {
-  z-index: 0;
+  z-index: -1;
   position: relative;
   height: 368px;
   width: 922px;
@@ -258,7 +259,7 @@ header .nav-office li a:hover {
   background-position: 54px bottom;
 }
 
-/*-- title-topics --*/
+/*-- section-topics --*/
 section.topics h2 {
   margin-top: 76px;
   margin-bottom: 20px;
@@ -274,7 +275,6 @@ section.topics h2 .topics-sub {
   margin-top: 100px;
   display: block;
 }
-
 section.topics div {
   margin-bottom: 35px;
   border-top: 1px solid #000;
@@ -284,7 +284,6 @@ section.topics div img {
   position: relative;
   top: -10px;
 }
-
 section.topics ul {
   width: 860px;
   margin: 0 auto;
@@ -315,7 +314,119 @@ section.topics ul li a:hover img {
 section.topics ul li:last-child {
   margin-right: 0;
 }
-
 section.topics ul:last-child {
   margin-bottom: 65px;
+}
+
+/*-- section-news --*/
+section.news h2 {
+  margin-bottom: 30px;
+  padding-top: 35px;
+  background-image: url("../img/section3_top_lineimg.png");
+  background-repeat: no-repeat;
+  text-align: center;
+}
+section.news > p {
+  margin-bottom: 41px;
+  border-top: 1px solid #000;
+  text-align: center;
+}
+section.news > p img {
+  position: relative;
+  top: -10px;
+}
+section.news li {
+  display: inline-block;
+  width: 33.3%;
+  height: 192px;
+  padding-right: 37px;
+  padding-left: 30px;
+  border-right: 4px double #87827b;
+  vertical-align: top;
+  box-sizing: border-box;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro";
+}
+section.news li a {
+  font-size: 14.04px;
+  line-height: 21.06px;
+  font-weight: bold;
+  color: #000;
+}
+section.news li p {
+  margin-top: 23px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #65676d;
+}
+section.news li p:last-child {
+  margin-top: 14px;
+  font-size: 10px;
+  line-height: 10px;
+  color: #000;
+  font-style: oblique;
+}
+section.news li:first-child {
+  padding-left: 0;
+}
+section.news li:last-child {
+  border: none;
+  padding-right: 0;
+}
+
+section.recommendItem h2 {
+  margin-top: 125px;
+  padding-top: 42px;
+  background-image: url("../img/section4_top_lineimg.png");
+  background-repeat: no-repeat;
+  text-align: center;
+}
+section.recommendItem > p {
+  margin-top: 36px;
+  margin-bottom: 20px;
+  border-top: 1px solid #000;
+  text-align: center;
+}
+section.recommendItem > p img {
+  position: relative;
+  top: -10px;
+}
+section.recommendItem ul li {
+  display: inline-block;
+  box-sizing: border-box;
+}
+section.recommendItem ul li > .item-image {
+  border: 5px solid #000;
+  box-sizing: border-box;
+}
+section.recommendItem ul li div {
+  text-align: center;
+}
+section.recommendItem ul li div a:first-child {
+  padding-right: 8px;
+}
+section.recommendItem ul li div a:last-child {
+  padding-left: 8px;
+}
+section.recommendItem ul li > p {
+  width: 268px;
+  margin-top: 20px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #616268;
+  text-align: left;
+}
+section.recommendItem ul li:first-child {
+  padding-right: 28px;
+  padding-left: 0;
+}
+section.recommendItem ul li:nth-of-type(2) {
+  border-right: 4px double #847f78;
+  border-left: 4px double #847f78;
+  padding-right: 22px;
+  padding-left: 30px;
+}
+section.recommendItem ul li:last-child {
+  border: none;
+  padding-right: 0;
+  padding-left: 30px;
 }
