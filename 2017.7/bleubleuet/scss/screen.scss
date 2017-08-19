@@ -33,7 +33,9 @@ Body
 header {
 	height: 174px;
 	padding-top: 62px;
-	// border: 1px solid #000;
+	background-image: url('../img/header_wrap_img.gif');
+	background-position: left top;
+	background-repeat: repeat-x;
 }
 header h1 {
 	display: none;
@@ -193,6 +195,7 @@ header .nav-office li a:hover {
 
 /*-- section-topics --*/
 section.topics {
+	position: relative;
 	h2 {
 		margin-top: 76px;
 		margin-bottom: 20px;
@@ -250,10 +253,19 @@ section.topics {
 	ul:last-child {
 		margin-bottom: 65px;
 	}
+	.bg-stamp1 {
+		position: absolute;
+		top: -70px;
+		left: -75px;
+		z-index: -1;
+		opacity: 0.5;
+	}
 }
 
 /*-- section-news --*/
 section.news {
+	margin-top: 95px;
+	position: relative;
 	h2 {
 		margin-bottom: 30px;
 		padding-top: 35px;
@@ -307,9 +319,16 @@ section.news {
 		border: none;
 		padding-right: 0;
 	}
+	.bg-stamp2 {
+		position: absolute;
+		top: -63px;
+		left: 763px;
+		opacity: 0.5;
+	}
 }
 section.recommendItem {
 	margin-bottom: 135px;
+	position: relative;
 	h2 {
 		margin-top: 125px;
 		padding-top: 42px;
@@ -376,8 +395,21 @@ section.recommendItem {
 			padding-left: 30px;
 		}
 	}
+	.bg-stamp3 {
+		position: absolute;
+		top: -123px;
+		left: -35px;
+		opacity: 0.5;
+	}
+	.bg-stamp6 {
+		position: absolute;
+		top: 457px;
+		right: -78px;
+		opacity: 0.5;
+	}
 }
 section.shop {
+	position: relative;
 	margin-bottom: 115px;
 	text-align: center;
 	h2 {
@@ -396,7 +428,7 @@ section.shop {
 			top: -10px;
 		}
 	}
-	> img {
+	.shop-image {
 		height: 267px;
 		width: 630px;
 		border: 5px solid #000;
@@ -423,7 +455,7 @@ section.shop {
 			background-color: #000;
 		}
 	}
-	> p:last-child {
+	.shop-p {
 		margin-top: 15px;
 		border: none;
 		font-size: 14px;
@@ -431,10 +463,23 @@ section.shop {
 		line-height: 23.8px;
 		font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro";
 	}
+	.bg-stamp7 {
+		position: absolute;
+		top: 168px;
+		left: -70px;
+		opacity: 0.5;
+	}
+	.bg-stamp4 {
+		position: absolute;
+		right: -49px;
+		bottom: -205px;
+		opacity: 0.5;
+	}
 }
 section.onlinestore {
 	margin-bottom: 81px;
 	text-align: center;
+	position: relative;
 	h2 {
 		margin-bottom: 30px;
 		padding-top: 35px;
@@ -492,10 +537,103 @@ section.onlinestore {
 		text-decoration: none;
 		font-size: 17px;
 	}
+	.bg-stamp5 {
+		position: absolute;
+		top: 425px;
+		left: 11px;
+		opacity: 0.5;
+	}
 }
 .page-top {
 	display: block;
 	border-top: 4px double #8e8982;
 	padding: 16px 3px 23px 0;
 	text-align: right;
+}
+
+/*-- footer --*/
+footer {
+	height: 300px;
+	background-image: url('../img/footer_wrap_img.gif');
+	background-position: left bottom;
+	background-repeat: repeat-x;
+}
+.footer-inner-wrap {
+	background-image: url('../img/footer_line-top.gif');
+	background-position: left top;
+	background-repeat: repeat-x;
+}
+.footer-inner {
+	background-image: url('../img/footer_line-bottom.gif');
+	background-position: left bottom;
+	background-repeat: repeat-x;
+	div {
+		display: inline-block;
+		height: 145px;
+		margin: 24px 0;
+		padding: 0 48px;
+		border-right: 1px solid #666;
+		vertical-align: top;
+		font-size: 12px;
+		line-height: 18px;
+		font-family:  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro";
+		box-sizing: border-box;
+		li {
+			height: 20px;
+		}
+		a {
+			color: rgba(0, 0, 0, 0.65);
+			text-decoration: none;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+		.footer-contents {
+			display: block;
+			margin-bottom: 12px;
+		}
+		.footer-icon {
+			padding: 5px 0;
+			.icon, a {
+				display: inline-block;
+				vertical-align: top;
+			}
+			.icon {
+				margin-right: 3px;
+			}
+			a {
+				font-weight: bold;
+			}
+		}
+	}
+	div:first-child {
+		width: 350px;
+		padding: 40px 0 0 40px;
+		a {
+			display: block;
+			margin: 0 auto;
+		}
+		.logo-bleubleuet {
+			margin-bottom: 22px;
+		}
+	}
+	div:nth-of-type(2) {
+		width: 340px;
+		ul {
+			display: inline-block;
+			margin-right: 28px;
+			// border: 1px solid #000;
+			vertical-align: top;
+		}
+		ul:last-child {
+			margin-right: 0;
+			.footer-icon {
+				padding-top: 1px;
+			}
+		}
+	}
+	div:last-child {
+		width: 221px;
+		border: none;
+	}
 }

@@ -86,6 +86,9 @@ Body
 header {
   height: 174px;
   padding-top: 62px;
+  background-image: url("../img/header_wrap_img.gif");
+  background-position: left top;
+  background-repeat: repeat-x;
 }
 
 header h1 {
@@ -260,6 +263,9 @@ header .nav-office li a:hover {
 }
 
 /*-- section-topics --*/
+section.topics {
+  position: relative;
+}
 section.topics h2 {
   margin-top: 76px;
   margin-bottom: 20px;
@@ -317,8 +323,19 @@ section.topics ul li:last-child {
 section.topics ul:last-child {
   margin-bottom: 65px;
 }
+section.topics .bg-stamp1 {
+  position: absolute;
+  top: -70px;
+  left: -75px;
+  z-index: -1;
+  opacity: 0.5;
+}
 
 /*-- section-news --*/
+section.news {
+  margin-top: 95px;
+  position: relative;
+}
 section.news h2 {
   margin-bottom: 30px;
   padding-top: 35px;
@@ -372,9 +389,16 @@ section.news li:last-child {
   border: none;
   padding-right: 0;
 }
+section.news .bg-stamp2 {
+  position: absolute;
+  top: -63px;
+  left: 763px;
+  opacity: 0.5;
+}
 
 section.recommendItem {
   margin-bottom: 135px;
+  position: relative;
 }
 section.recommendItem h2 {
   margin-top: 125px;
@@ -433,8 +457,21 @@ section.recommendItem ul li:last-child {
   padding-right: 0;
   padding-left: 30px;
 }
+section.recommendItem .bg-stamp3 {
+  position: absolute;
+  top: -123px;
+  left: -35px;
+  opacity: 0.5;
+}
+section.recommendItem .bg-stamp6 {
+  position: absolute;
+  top: 457px;
+  right: -78px;
+  opacity: 0.5;
+}
 
 section.shop {
+  position: relative;
   margin-bottom: 115px;
   text-align: center;
 }
@@ -454,7 +491,7 @@ section.shop > p img {
   position: relative;
   top: -10px;
 }
-section.shop > img {
+section.shop .shop-image {
   height: 267px;
   width: 630px;
   border: 5px solid #000;
@@ -481,7 +518,7 @@ section.shop li:last-child {
 section.shop li:last-child a {
   background-color: #000;
 }
-section.shop > p:last-child {
+section.shop .shop-p {
   margin-top: 15px;
   border: none;
   font-size: 14px;
@@ -489,10 +526,23 @@ section.shop > p:last-child {
   line-height: 23.8px;
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro";
 }
+section.shop .bg-stamp7 {
+  position: absolute;
+  top: 168px;
+  left: -70px;
+  opacity: 0.5;
+}
+section.shop .bg-stamp4 {
+  position: absolute;
+  right: -49px;
+  bottom: -205px;
+  opacity: 0.5;
+}
 
 section.onlinestore {
   margin-bottom: 81px;
   text-align: center;
+  position: relative;
 }
 section.onlinestore h2 {
   margin-bottom: 30px;
@@ -551,10 +601,104 @@ section.onlinestore .online-btn {
   text-decoration: none;
   font-size: 17px;
 }
+section.onlinestore .bg-stamp5 {
+  position: absolute;
+  top: 425px;
+  left: 11px;
+  opacity: 0.5;
+}
 
 .page-top {
   display: block;
   border-top: 4px double #8e8982;
   padding: 16px 3px 23px 0;
   text-align: right;
+}
+
+/*-- footer --*/
+footer {
+  height: 300px;
+  background-image: url("../img/footer_wrap_img.gif");
+  background-position: left bottom;
+  background-repeat: repeat-x;
+}
+
+.footer-inner-wrap {
+  background-image: url("../img/footer_line-top.gif");
+  background-position: left top;
+  background-repeat: repeat-x;
+}
+
+.footer-inner {
+  background-image: url("../img/footer_line-bottom.gif");
+  background-position: left bottom;
+  background-repeat: repeat-x;
+}
+.footer-inner div {
+  display: inline-block;
+  height: 145px;
+  margin: 24px 0;
+  padding: 0 48px;
+  border-right: 1px solid #666;
+  vertical-align: top;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro";
+  box-sizing: border-box;
+}
+.footer-inner div li {
+  height: 20px;
+}
+.footer-inner div a {
+  color: rgba(0, 0, 0, 0.65);
+  text-decoration: none;
+}
+.footer-inner div a:hover {
+  text-decoration: underline;
+}
+.footer-inner div .footer-contents {
+  display: block;
+  margin-bottom: 12px;
+}
+.footer-inner div .footer-icon {
+  padding: 5px 0;
+}
+.footer-inner div .footer-icon .icon, .footer-inner div .footer-icon a {
+  display: inline-block;
+  vertical-align: top;
+}
+.footer-inner div .footer-icon .icon {
+  margin-right: 3px;
+}
+.footer-inner div .footer-icon a {
+  font-weight: bold;
+}
+.footer-inner div:first-child {
+  width: 350px;
+  padding: 40px 0 0 40px;
+}
+.footer-inner div:first-child a {
+  display: block;
+  margin: 0 auto;
+}
+.footer-inner div:first-child .logo-bleubleuet {
+  margin-bottom: 22px;
+}
+.footer-inner div:nth-of-type(2) {
+  width: 340px;
+}
+.footer-inner div:nth-of-type(2) ul {
+  display: inline-block;
+  margin-right: 28px;
+  vertical-align: top;
+}
+.footer-inner div:nth-of-type(2) ul:last-child {
+  margin-right: 0;
+}
+.footer-inner div:nth-of-type(2) ul:last-child .footer-icon {
+  padding-top: 1px;
+}
+.footer-inner div:last-child {
+  width: 221px;
+  border: none;
 }
